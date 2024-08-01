@@ -26,7 +26,7 @@ public class StaticBlock {
   
 2. **Polymorphism :** refers to many ways to represent a single entity/member. It means that the defination of the method is same like paramters allowed etc., but, the action of the methods remains different for different cases. Like Shape also has area method, circle & square also has area method, difference is in the action of area method with instance of circle & square.
    - **Compile Time or Static** polymorphism achieved using method overloading. Which means same name, but, return type, arguments can be different.
-   - **Runtime or Dynamic** polymorphism achieved with method overriding. Which means differnt body, but, everything same. In ` Parent obj = new Child() ` which method will be called, depends on the children. Known as *Upcasting*. Dynamic method dispatching service decide if a method needs to be executed in runtime or compile time.**Final** method is used to avoid overriding known as early binding. Static methods runs on first class call & cannot be overridden, can be inherited.
+   - **Runtime or Dynamic** polymorphism achieved with method overriding. Which means differnt body, but, everything same. In ` Parent obj = new Child() ` which method will be called, depends on the children, but, which attributes could be used depends on Parent. Known as *Upcasting*. Dynamic method dispatching service decide if a method needs to be executed in runtime or compile time.**Final** method is used to avoid overriding known as early binding. Static methods runs on first class call & cannot be overridden, can be inherited.
   
 3. **Abstraction :** refers to hiding unneccessary information & provide only the valuable information. Like if we use arraylist, we don't really care about how it is implemented, we just use it. ` It is a design issue.`
 
@@ -39,4 +39,8 @@ public class StaticBlock {
    - *Default* modifier can only be accessed from same package, inheritance within package is allowed.
    - *Private* modifier can only be accesssed within the class.
 
-**Abstract class** does not have body, they only provide function prototype. Later, sub class have to inherit & implement that method. Any class with one or more abstract method, must be declared as abstract by convention. We cannot create objects of the abstract class, but, you can make a constructor for the abstract class.
+**Abstract class** does not have body, they only provide function prototype. Later, sub class have to inherit & implement that method. Any class with one or more abstract method, must be declared as abstract by convention. We cannot create objects of the abstract class, but, you can make a constructor for the abstract class. To implement multiple inheritance we use interfaces. Here, we contain abstract function similar to abstract class & implementing multiple interfaces is also allowed over here. They are by default, final & variables are static. Implementing a class which extends an interface, reuqires to implement all the methods from all the connected interfaces. **Annotations** are also a sort of interfaces.
+
+```java 
+public @interface Override { }
+```
