@@ -1,4 +1,4 @@
-package Object_Oriented.Student_Example;
+package Student_Example;
 
 public class Student {
     int studentId;

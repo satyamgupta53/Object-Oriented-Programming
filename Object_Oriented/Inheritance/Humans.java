@@ -1,4 +1,4 @@
-package Object_Oriented.Inheritance;
+package Inheritance;
 
 public class Humans extends Species {
     private int numberOfLegs;

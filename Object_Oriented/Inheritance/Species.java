@@ -1,4 +1,4 @@
-package Object_Oriented.Inheritance;
+package Inheritance;
 
 public class Species {
     private boolean isAlive;

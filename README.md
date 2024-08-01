@@ -32,3 +32,11 @@ public class StaticBlock {
 
 4. **Encapsulation :** refers to wrapping the implementation of the data members & methods in a class. ` It is a programmer issue ` where they achieve abstraction through encapsulating code. **Data hiding** refers to hiding data using private keyword, ensuring data security & encapsulation is a sub-process of it where we are concerned with reducing the complexity of the system by providing ready-mate functions.
 ---
+
+**Access modifier**  play an important role in data security & maintaining data integrity. There are four types of the same - public, private, default & protected. **Packages** are of two types: User-defined & In-built. Some of the in-built packages include *lang* ` contains basic & important java language essentials `, *io* ` contains input-output functions `, *util* ` contains utility class such as data structures & collection framework `.
+   - *Public* modifier can be accessed any where, in same class, package, sub class, different package, but, sub class, even in the different package & different class.
+   - *Protected* modifier have the similar rules as public, but, cannot be accessed from different package & not sub class.
+   - *Default* modifier can only be accessed from same package, inheritance within package is allowed.
+   - *Private* modifier can only be accesssed within the class.
+
+**Abstract class** does not have body, they only provide function prototype. Later, sub class have to inherit & implement that method. Any class with one or more abstract method, must be declared as abstract by convention. We cannot create objects of the abstract class, but, you can make a constructor for the abstract class.

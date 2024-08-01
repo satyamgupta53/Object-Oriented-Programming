@@ -1,4 +1,4 @@
-package Object_Oriented.Static_Block;
+package Static_Block;
 
 public class Singleton {
     private Singleton() {
