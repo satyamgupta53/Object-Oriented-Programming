@@ -56,6 +56,58 @@ public @interface Override { }
     }
 ```
 
+**Exception Handling** is very crucial process to avoid unneccesary termination of the program without producing the workflow it was decided to follow. ` Throwable class ` extends Object class which has two categories as *Exceptions & Errors*. Exceptions are of two types as *Checked/Compile time* & *Unchecked/Runtime*. We can provide custom message by using ` throw new Exception("Hi! exception") `, but don't forget to mention ` throws Exception ` in front of the method. We can create custom Exception, by extending the Exception class & create a constructor, take ` String message ` & pass as ` super(message); `. Then, you can use getMessage() message of Exception class to throw custom message in custom exception.
+
+```java
+public class Exceptions {
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 0;
+        try {
+           int c = a / b;
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("We finally catched the exception");
+        }
+    } 
+}
+```
+
+```java
+/* 
+ * Implementing clonable interface in class file, creates a shallow copy.
+ * Shallow copy will not create object, it will copy the object references, but, it will create new primitives.
+*/
+public class Human implements Clonable {
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Human satyam = new Human("Satyam");
+        Human sattu = (Human)satyam.clone();
+    }
+}
+```
+
+![Collection Framework](Collection_Framework.png)
+
+**Collection Framework** is one of the most important library in Java. It has a collection of data structures and stores methods related to each of the data structures. Vector is similar to array list, but, only difference is in arraylist multiple threads can access it unlike, vectors, in which threads needs to be in waiting area if any one thread is already operating. Thus, arraylist is more faster than vectors. **Enums** or Enumerations are the constant group of variables. They are by default static, public & final. Methods on it are as follows ` MONDAY.ordinal() ` will print the position of the constant in enum. Constructor is either private or default. It does not follows inheritance, but, implements interface.
+
+```java
+public class Basic {
+    enum Week {
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+    }
+
+    public static void main(String[] args) {
+        Week week = Week.MONDAY;
+        for (Week day: Week.values()) 
+            System.out.println(day);
+    }
+}
+```
 
 
 
