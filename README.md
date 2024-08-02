@@ -44,3 +44,18 @@ public class StaticBlock {
 ```java 
 public @interface Override { }
 ```
+
+**Generics** allows the code to be type safe & reuse the code written for multiple data types. Also, here only classes can be added, no type declaration as primitives. We can use a raw parameter ` <T> ` for creating generic classes. Thus, we can now use this code for String, Integer, Float etc. **Comparables** are used by implementig the imterface, and we can implement ` compareTo() ` method return a integer value. This is very useful in implementing custom Sort over any object & if, there are many fields to check for, the condition we give in the compare to method, then, will sort on that basis. Below is the snippet using wildcards.
+
+```java
+    public void display(List<? extends Number> list) {
+        for (Number num : list) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+```
+
+
+
+
